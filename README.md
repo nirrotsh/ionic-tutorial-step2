@@ -23,3 +23,10 @@ TaskData.prototype.isNew = function(){
     return (typeof this.id === 'undefined' && this.id !== null);
 }
 ```
+
+## Step 2: Create the views
+The MyTasks application have 3 different views
+* The main view is a list of all the tasks
+* A view to create a new task
+* A view to edit an existing task (same view as the new task)
+

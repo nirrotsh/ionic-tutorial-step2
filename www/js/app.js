@@ -23,4 +23,15 @@ angular.module('MyTasks', ['ionic'])
   });
 })
 
-_someTask = new TaskData("do something", "2016-04-10","some description");
+.config(function($stateProvider, $urlRouterProvider) {
+  $urlRouterProvider.otherwise('/')
+
+  $stateProvider.state('home', {
+    url: '/',
+    templateUrl: 'views/taskListView.html'
+    })
+  .state('new', {
+    url: '/new',
+    templateUrl: 'views/taskDetailView.html'
+    })
+})
