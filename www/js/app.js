@@ -22,3 +22,5 @@ angular.module('MyTasks', ['ionic'])
     }
   });
 })
+
+_someTask = new TaskData("do something", "2016-04-10","some description");
