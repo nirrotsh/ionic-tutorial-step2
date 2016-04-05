@@ -1,0 +1,10 @@
+<ion-view title="My Tasks">
+  <ion-content>
+      tasks goes here
+    <ion-list>
+      <ion-item ng-repeat="task in tasks" class="item item-icon-right">
+        <span ng-class="{done: task.done}">{{task.title}}</span>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
